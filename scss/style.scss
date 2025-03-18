@@ -1,0 +1,99 @@
+@use "variable";
+@use "header";
+@use "main";
+@use "news";
+@use "concept";
+@use "feature";
+@use "service";
+@use "works";
+@use "blog";
+@use "contact";
+@use "footer";
+
+body{
+   color: variable.$text_color;
+   font-family: sans-serif;
+   font-size: 14px;
+   letter-spacing: .05em;
+   line-height: 1.7;
+}
+
+
+.container{
+   margin: 0 auto;
+   width: 1064px;
+   max-width: 100%;
+}
+
+.section__title{
+   color: #ffffff;
+   background-color: variable.$main-color;
+   font-size: 23px;
+   letter-spacing: .15em;
+   display: inline;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+   padding: 10px 14px;
+   font-weight: 600;
+   line-height: 2.1;
+}
+.section__desc{
+   margin-top: 30px;
+}
+
+.section__button{
+   text-align: center;
+   a{
+      display: inline-block;
+      color: variable.$main-color;
+      width: 224px;
+      height: 36px;
+      border: 1px solid variable.$main-color;
+      line-height: 36px;
+      position: relative;
+      text-align: left;
+      padding-left: 65px;
+      font-size: 13px;
+      z-index: 1;
+      span{
+         font-size: 8px;
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+      }
+
+      &::after{
+         background: variable.$main-color;
+         position: absolute;
+         top: 0;
+         left: 0;
+         content: '';
+         width: 100%;
+         height: 100%;
+         transform: scale(0, 1);
+         transform-origin: left top;
+         transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+         z-index: -1;
+      }
+
+      &:hover::after{
+         transform: scale(1, 1);
+      }
+      &:hover{
+         color: #fff;
+      }
+   }
+}
+
+.section__logo{
+   rotate: 90deg;
+   font-size: 74px;
+   color: #eff1f4;
+   font-weight: 600;
+   position: absolute;
+    letter-spacing: .16em;
+    transform-origin: bottom left;
+    top: -26%;
+   line-height: 1;
+   z-index: 1;
+}

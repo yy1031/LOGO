@@ -1,0 +1,120 @@
+@use "variable";
+
+
+.feature{
+   position: relative;
+   &::before{
+      position: absolute;
+      content: "";
+      background-color: variable.$base-color;
+      width: 46%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+   }
+
+   &::after{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 200px;
+      -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+      clip-path: polygon(0 100%, 100% 100%, 100% 0);
+      background-color: variable.$base_color;
+      right: 0;
+      top: 0;
+      z-index: 20;
+   }
+
+   .container{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 10;
+
+   }
+}
+
+.feature__left{
+   width: 31%;
+   padding-top: 74px;
+   padding-bottom: 54px;
+
+}
+.feature__right{
+   width: 56%;
+   background-color: #fff;
+   padding-top: 60px;
+   padding-bottom: 54px;
+   position: relative;
+
+   &::before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 200px;
+      -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+      clip-path: polygon(0 100%, 100% 100%, 100% 0);
+      background-color: #fff;
+      left: -200px;
+      top: 0;
+
+   }
+}
+
+.feature__subtitle{
+   color: variable.$main-color;
+   font-size: 18px;
+   margin-bottom: 8px;
+   margin-top: 14px;
+   font-weight: 600;
+}
+
+.feature__desc{
+   color: variable.$main-color;
+}
+.feature__list{
+   width: 100%;
+}
+.feature__list-item{
+   width: 71.1%;
+   margin-left: auto;
+   position: relative;
+
+   &::before{
+      position: absolute;
+      content: "01";
+      font-size: 86px;
+      color: #eff1f4;
+      top: 50%;
+      left: -35%;
+      transform: translateY(-50%);
+      font-weight: 600;
+   }
+}
+
+
+.feature__list-title{
+   color: variable.$main-color;
+   font-size: 26px;
+   font-weight: 600;
+   letter-spacing: .1em;
+}
+.feature__list-item--2{
+   margin-top: 78px;
+   margin-right: 80px;
+
+   &::before{
+      content: "02";
+   }
+}
+
+.feature__list-item--3{
+   margin-top: 78px;
+   margin-right: 160px;
+
+   &::before{
+      content: "03";
+   }
+}

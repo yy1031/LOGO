@@ -1,0 +1,58 @@
+@use "variable";
+
+
+.news{
+   height: 68px;
+   margin-top: -22px;
+   margin-bottom: 124px;
+   overflow: hidden;
+   .container{
+      height: 100%;
+   }
+}
+
+.news-wrapper{
+   margin-right: calc(-50vw);
+   width: 120%;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding-left: 36px;
+   display: flex;
+   gap: 132px;
+   align-items: center;
+   height: 100%;
+}
+
+.news__title{
+   color: variable.$main-color;
+   position: relative;
+   font-size: 16px;
+   font-weight: 600;
+   &::after{
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 2px;
+      background-color: #d6d6d6;
+      top: 50%;
+      right: -18px;
+      transform: translateY(-50%);
+
+   }
+}
+
+.news__content{
+   display: flex;
+   gap: 30px;
+}
+
+.news__content-title{
+   text-decoration: underline;
+
+   a{
+      transition: all .3s;
+      &:hover{
+         opacity: .7;
+      }
+   }
+
+}

@@ -1,0 +1,53 @@
+@use "variable";
+
+
+.blog{
+   background-color: #ace4ae;
+   padding-top: 74px;
+   padding-bottom: 24px;
+   margin-bottom: 74px;
+
+   .container{
+      position: relative;
+   }
+}
+.blog__wrapper{
+   margin: 0 auto;
+   width: 889px;
+   max-width: 100%;
+   background-color: #fff;
+   padding: 30px 90px 50px;
+}
+
+.blog__item{
+   display: flex;
+   gap: 30px;
+   padding-left: 56px;
+   align-items: center;
+   border-bottom: 1px solid #e2e2e2;
+   padding-top: 32px;
+   padding-bottom: 32px;
+
+}
+
+.blog__date{
+   font-size: 12px;
+}
+
+.blog__text{
+   text-decoration: underline;
+   a{
+      transition: all .3s;
+      &:hover{
+         opacity: .7;
+      }
+   }
+
+}
+
+.blog__logo.section__logo{
+   color: #fff;
+   top: 36%;
+   right: 70px;
+   transform-origin: bottom right;
+}

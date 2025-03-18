@@ -1,0 +1,93 @@
+@use "variable";
+
+
+.contact{
+   background-color: variable.$main-color;
+   text-align: center;
+   color: #fff;
+   padding: 70px 0;
+
+   .contact__buttons{
+      justify-content: center;
+   }
+}
+
+.contact__title{
+   font-size: 22px;
+   margin-bottom: 24px;
+   font-weight: 600;
+}
+
+
+.contact__button{
+   a{
+      display: inline-block;
+      width: 220px;
+      height: 52px;
+      font-size: 16px;
+      background-color: variable.$accent-color;
+      color: #ffffff;
+      line-height: 52px;
+      position: relative;
+      transition: all .3s;
+      padding-left: 23%;
+      text-align: left;
+      span{
+         font-size: 8px;
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+      }
+
+      &:hover{
+         background-color: #14777b;
+      }
+   }
+}
+
+
+
+.contact__tel{
+   a{
+      display: inline-block;
+      width: 220px;
+      height: 52px;
+      color: #ffffff;
+      background-color: variable.$main-color;
+      text-align: center;
+      transition: all .3s;
+      &:hover{
+         background-color: #122858;
+      }
+   }
+
+
+   .section__tel-number{
+      &::before{
+         left: 9px;
+      }
+   }
+}
+.contact__tel-number{
+   font-size: 18px;
+   position: relative;
+
+   &::before{
+      position: absolute;
+      content: "";
+      background: url(../img/tel.png) no-repeat;
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      left: 10px;
+      top: 3px;
+   }
+}
+.contact__tel-time{
+   font-size: 12px;
+}
+
+.contact__buttons{
+   display: flex;
+   gap: 74px;
+}

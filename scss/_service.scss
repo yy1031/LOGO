@@ -1,0 +1,49 @@
+@use "variable";
+
+
+.service{
+   padding-top: 148px;
+   .container{
+      position: relative;
+   }
+
+   .section__desc{
+      width: 84%;
+   }
+}
+
+.service__list{
+   width: 82%;
+   display: flex;
+   gap:14px;
+   justify-content: space-between;
+   margin: 36px auto 0;
+}
+.service__item-img{
+   margin-bottom: 34px;
+   background-color: variable.$base-color;
+   height: 189px;
+   position: relative;
+}
+.service__item-title{
+   position: absolute;
+   font-size: 18px;
+   color: variable.$main-color;
+   background-color: #fff;
+   padding: 2px 16px;
+   display: inline;
+   left: 14px;
+   bottom: 8px;
+   font-weight: 600;
+}
+
+.service__item-text{
+   padding: 0 10px;
+   margin-bottom: 34px;
+}
+
+.section__logo.service__logo{
+   top: 63%;
+   right: 70px;
+   transform-origin: bottom right;
+}

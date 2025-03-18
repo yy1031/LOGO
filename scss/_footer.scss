@@ -1,0 +1,22 @@
+@use "variable";
+
+
+.footer{
+   background-color: variable.$main-color;
+   color: #fff;
+   text-align: center;
+   padding: 40px 0;
+}
+
+.footer__logo{
+   font-size: 24px;
+   margin-bottom: 24px;
+}
+
+.footer__text{
+   margin-bottom: 30px;
+}
+
+.footer__copyright{
+   font-size: 10px;
+}

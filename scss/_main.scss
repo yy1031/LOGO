@@ -1,0 +1,48 @@
+@use "variable";
+
+
+
+.main{
+   background-color: variable.$main-color;
+
+   .container{
+      padding-top: 170px;
+      padding-bottom: 96px;
+   }
+}
+.main__title{
+   font-size: 56px;
+   color: variable.$main-color;
+   margin-bottom: 22px;
+   line-height: 1;
+   font-weight: 600;
+}
+.main__title--1,.main__title--2{
+   margin-bottom: 6px;
+   background: #ffffff;
+   padding: 10px 16px;
+   display: inline-block;
+}
+
+.main__title--1{
+   margin-bottom: 6px;
+   letter-spacing: .2em;
+}
+.main__title--2{
+   letter-spacing: .033em;
+}
+.main__subtitle{
+   display: inline-block;
+   font-size: 18px;
+   background: #ffffff;
+   color: variable.$main-color;
+   padding: 10px 16px;
+   margin-bottom: 76px;
+   line-height: 1;
+   font-weight: 600;
+   letter-spacing: .1em;
+}
+
+
+
+

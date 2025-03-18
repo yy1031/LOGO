@@ -1,0 +1,54 @@
+@use "variable";
+
+
+.concept{
+   padding-bottom: 124px;
+
+   .container{
+      position: relative;
+   }
+}
+
+
+.concept__wrapper{
+   margin-left: 170px;
+}
+
+.concept__flex{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 36px;
+   align-items: center;
+}
+
+.concept__flex--left{
+   width: 442px;
+   height: 296px;
+}
+
+.concept__flex--right{
+   text-align: right;
+}
+
+.concept__title{
+   margin-bottom: 44px;
+}
+
+.concept__price{
+   color: variable.$main-color;
+   letter-spacing: .1em;
+   strong{
+      font-size: 56px;
+      letter-spacing: .15em;
+      font-weight: 400;
+   }
+}
+
+.concept__text{
+   margin-bottom: 36px;
+}
+
+
+.section__logo.concept__logo{
+   top: -26%;
+}
