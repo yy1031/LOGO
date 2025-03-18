@@ -1,0 +1,6 @@
+# authenticate(Basic)
+AuthUserFile /Users/yukako/Library/Containers/com.apple.AppleMediaServicesUI.SpyglassPurchases/Data/file:/Users/yukako/LOGO/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user
